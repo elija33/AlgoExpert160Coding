@@ -1,4 +1,4 @@
-package SortedSquaredArray;
+package SortedSquaredArray.Naive;
 
 import java.util.Arrays;
 
@@ -6,10 +6,9 @@ public class sortedsquared {
     public static int[] sortedsquared(int array[]) {
         for (int i = 0; i < array.length; i++) {
             array[i] = array[i] * array[i];
-            Arrays.sort(array);
-            return array;
         }
-        return new int[] {};
+        Arrays.sort(array);
+        return array;
     }
 
     public static void main(String[] args) {
